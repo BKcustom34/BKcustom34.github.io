@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réparation & Custom Scooter</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: orange;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .btn {
+            background: orange;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .services li {
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background: orange;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Réparation & Custom Scooter</h1>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Devis</a>
+    </nav>
+</header>
+
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>Spécialiste en réparation et personnalisation de scooters. Travail sérieux, rapide et passionné.</p>
+    <a href="#contact" class="btn">Demander un devis</a>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <ul class="services">
+        <li>🔧 Réparation moteur</li>
+        <li>🛠️ Entretien & révision</li>
+        <li>🎨 Custom peinture</li>
+        <li>⚙️ Installation accessoires</li>
+        <li>🏁 Optimisation performances</li>
+    </ul>
+</section>
+
+<section id="galerie">
+    <h2>Galerie (bientôt)</h2>
+    <p>Photos avant / après à venir.</p>
+</section>
+
+<section id="contact">
+    <h2>Demande de Devis</h2>
+
+    <form action="https://formspree.io/f/mwkzqjrd" method="POST">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <input type="text" name="scooter" placeholder="Modèle du scooter" required>
+        <textarea name="message" placeholder="Expliquez votre demande" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Réparation Scooter - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
